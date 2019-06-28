@@ -1,7 +1,7 @@
 Rails.application.routes.draw do
   namespace :client do
   get 'articles' => 'articles#index'
-  post 'articles/:id' => 'articles#show'
+  get 'articles/:id' => 'articles#show'
   post 'articles' => 'articles#create'
   patch 'articles/:id' => 'articles#update'
   delete 'articles/:id' => 'articles#destroy'
@@ -14,3 +14,5 @@ Rails.application.routes.draw do
   delete 'users/:id' => 'users#destroy'
   end
 end
+
+
